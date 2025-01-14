@@ -37,11 +37,11 @@
 
 ## 客户端配置
 
-运行客户端时，可以将其余客户端配置挂载到`/client/extra.yaml` 以微调客户端。运行docker时指定`-v /path/to/my/custom/extra.yaml /client/extra.yaml` 即可。
+运行客户端时，可以将其余客户端配置挂载到`/client/extra.yaml` 以微调客户端。运行docker时指定`-v /path/to/my/custom/extra.yaml:/client/extra.yaml` 即可。
 
 > [!CAUTION]
 > 
-> 所有自定义文件都必须至少包含源码中`client_extra.yaml` 的条目，否则hysteria会运行异常。（已经存在于`client-template.yaml` 也不得修改）
+> 所有自定义文件都必须至少包含源码中`client_extra.yaml` 的条目，否则hysteria会运行异常。（已经存在于`client-template.yaml`中的也不得修改）
 
 默认配置为:
 
