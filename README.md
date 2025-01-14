@@ -22,7 +22,7 @@
 1. 服务端
    
    ```
-   docker run --privileged -p 8090:8090 lry127/hysteria_server:latestdocker
+   docker run --privileged -p 8090:8090 lry127/hysteria_server
    ```
 
 2. 客户端
