@@ -1,3 +1,10 @@
 bandwidth: 
   up: 10 mbps
   down: 10 mbps
+
+socks5:
+  listen: 127.0.0.1:1080 
+
+http:
+  listen: 127.0.0.1:8080
+
