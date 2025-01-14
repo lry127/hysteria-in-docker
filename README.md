@@ -2,21 +2,6 @@
 
 将hysteria + udp2raw 放到docker里面运行
 
-## 构建
-
-请确保以下命令存在PATH中：`docker openssl wget pwgen`
-
-```
-./build.sh
-```
-
-命令完成后会在`build-tmp`录中生成`server.img`和`client.img`
-
-需要执行`docker image load -i xxx.img`将镜像导入docker
-
-> [!TIP]
-> 也可以通过修改`build.sh` 中的`server_image_output` 和`client_image_output`来修改镜像名字，然后用`docker push xxx` 方便地推到registry.
-
 ## 运行
 
 1. 服务端
@@ -57,6 +42,21 @@ http:
   listen: 127.0.0.1:8080
 ```
 
+## 构建
+
+请确保以下命令存在PATH中：`docker openssl wget pwgen`
+
+```
+./build.sh
+```
+
+命令完成后会在`build-tmp`录中生成`server.img`和`client.img`
+
+需要执行`docker image load -i xxx.img`将镜像导入docker
+
+> [!TIP]
+> 也可以通过修改`build.sh` 中的`server_image_output` 和`client_image_output`来修改镜像名字，然后用`docker push xxx` 方便地推到registry.
+
 ## License
 
 1. [hysteria](https://github.com/apernet/hysteria/blob/master/LICENSE.md)
@@ -64,5 +64,3 @@ http:
 2. [udp2raw](https://github.com/wangyu-/udp2raw/blob/unified/LICENSE.md)
 
 本项目所有代码在MIT许可证下许可。[本项目许可证](https://github.com/lry127/hysteria-in-docker/blob/master/LICENSE)
-
-
