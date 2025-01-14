@@ -13,7 +13,7 @@
 需要执行`docker image load -i xxx.img`将镜像导入docker
 
 > [!TIP]
-> 也可以通过修改`build.sh` 中的`server_image_output` 和`client_image_output`来修改镜像名字，然后用`docker push xxx` 方便推到registry.
+> 也可以通过修改`build.sh` 中的`server_image_output` 和`client_image_output`来修改镜像名字，然后用`docker push xxx` 方便地推到registry.
 
 ## 运行
 
