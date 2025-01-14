@@ -22,13 +22,13 @@
 1. 服务端
    
    ```
-   docker run --privileged -p 8090:8090 lry127/hysteria_server:latestdocker run --privileged -p 8090:8090 lry127/hysteria_server
+   docker run --privileged -p 8090:8090 lry127/hysteria_server:latestdocker
    ```
 
 2. 客户端
    
    ```
-   docker run --privileged  --network host -e SERVER_IP=1.1.1.1 -e SERVER_PORT=8090  lry127/hysteria_client
+   docker run --privileged --network host -e SERVER_IP=1.1.1.1 -e SERVER_PORT=8090 lry127/hysteria_client
    ```
    
    将`1.1.1.1`改成你的服务器ip即可（仅支持ip地址，不能用域名）
