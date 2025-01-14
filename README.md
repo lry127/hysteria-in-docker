@@ -55,6 +55,12 @@ http:
   listen: 127.0.0.1:8080
 ```
 
+## License
 
+1. [hysteria](https://github.com/apernet/hysteria/blob/master/LICENSE.md)
+
+2. [udp2raw](https://github.com/wangyu-/udp2raw/blob/unified/LICENSE.md)
+
+本项目所有代码在MIT许可证下许可。[本项目许可证](https://github.com/lry127/hysteria-in-docker/blob/master/LICENSE)
 
 
