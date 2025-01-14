@@ -22,7 +22,7 @@
 1. 服务端
    
    ```
-   docker run --privileged -p 8090:8090 lry127/hysteria_server:latestdocker run --privileged -p 8090:8090 lry127/hysteria_server:latest
+   docker run --privileged -p 8090:8090 lry127/hysteria_server:latestdocker run --privileged -p 8090:8090 lry127/hysteria_server
    ```
 
 2. 客户端
@@ -33,7 +33,7 @@
    
    将`1.1.1.1`改成你的服务器ip即可（仅支持ip地址，不能用域名）
    
-   此命令可以将监听本地 1080 端口。
+   此命令将监听本地 1080 端口（默认配置情况下）。
 
 ## 客户端配置
 
