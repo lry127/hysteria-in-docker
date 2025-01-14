@@ -10,13 +10,13 @@
 1. 服务端
    
    ```
-   docker run --privileged -p 8090:8090 lry127/hysteria_server
+   docker run --privileged -p 8090:8090 -d lry127/hysteria_server
    ```
 
 2. 客户端
    
    ```
-   docker run --privileged --network host -e SERVER_IP=1.1.1.1 -e SERVER_PORT=8090 lry127/hysteria_client
+   docker run --privileged --network host -d -e SERVER_IP=1.1.1.1 -e SERVER_PORT=8090 lry127/hysteria_client
    ```
    
    将`1.1.1.1`改成你的服务器ip即可（仅支持ip地址，不能用域名）
@@ -66,4 +66,4 @@ http:
 
 2. [udp2raw](https://github.com/wangyu-/udp2raw/blob/unified/LICENSE.md)
 
-本项目所有代码在MIT许可证下许可。[本项目许可证](https://github.com/lry127/hysteria-in-docker/blob/master/LICENSE)
+[本项目许可证](https://github.com/lry127/hysteria-in-docker/blob/master/LICENSE)
