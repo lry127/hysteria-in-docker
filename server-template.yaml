@@ -1,0 +1,8 @@
+tls:
+  cert: /certs/cert.pem
+  key: /certs/key.pem
+
+auth:
+  type: password
+  password: __password_placeholder__ 
+
