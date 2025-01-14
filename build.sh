@@ -6,6 +6,7 @@ client_image_output="lry127/hysteria_client"
 
 [ -d build-tmp ] && rm -rfv build-tmp
 mkdir build-tmp
+mkdir certs bin
 
 wget -O bin/hysteria "https://github.com/apernet/hysteria/releases/download/app%2F$version/hysteria-linux-amd64-avx"
 wget -O bin/udp2raw.tar.gz https://github.com/wangyu-/udp2raw/releases/download/20230206.0/udp2raw_binaries.tar.gz
