@@ -12,7 +12,7 @@ wget -O bin/hysteria "https://github.com/apernet/hysteria/releases/download/app%
 wget -O bin/udp2raw.tar.gz https://github.com/wangyu-/udp2raw/releases/download/20230206.0/udp2raw_binaries.tar.gz
 tar xfv bin/udp2raw.tar.gz -C bin
 
-openssl req -x509 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem -days 365 -nodes -subj "/C=US/CN=server"
+openssl req -x509 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem -days 3650 -nodes -subj "/C=US/CN=server"
 fingerprint=$(openssl x509 -noout -fingerprint -sha256 -in certs/cert.pem | sed 's/^.*Fingerprint=//')
 
 password=$(pwgen 16 1 -s)
