@@ -5,7 +5,7 @@
 > [!IMPORTANT]  
 > 客户端和服务器均仅在最新**Arch Linux**下测试可用.
 > 
-> 理论上能装docker的较新Linux都能用，但Windows有可能无法正常运行。
+> 理论上能装docker的较新Linux都能用，但Windows有可能无法正常运行.
 
 ## 运行
 
