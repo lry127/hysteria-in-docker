@@ -8,6 +8,6 @@ if [ -z "${SERVER_PORT+x}" ]; then
     exit -1
 fi
 
-./udp2raw -c -l0.0.0.0:8888  -r$SERVER_IP:$SERVER_PORT  -k "passwd" --raw-mode faketcp -a --fix-gro &
+./udp2raw -c -l127.0.0.1:8888  -r$SERVER_IP:$SERVER_PORT  -k "passwd" --raw-mode faketcp -a --fix-gro &
 cat extra.yaml >> config.yaml
 ./hysteria
