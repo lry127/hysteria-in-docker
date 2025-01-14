@@ -4,7 +4,7 @@
 
 ## 构建
 
-请确保以下命令存在PATH中：`docker sed openssl wget pwgen`
+请确保以下命令存在PATH中：`docker openssl wget pwgen`
 
 ```
 ./build.sh
