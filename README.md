@@ -5,7 +5,7 @@
 > [!IMPORTANT]  
 > 客户端和服务端分别仅在**最新Arch Linux**和**Ubuntu 24.04 Server**下测试可用.
 > 
-> 理论上能装docker的较新Linux都能用，但Windows有可能无法正常运行.
+> 理论上能装docker的较新Linux都能用, darwin 通过指定`--platform`也能运行，但Windows有可能无法正常运行. (darwin和Windows未进行任何测试）
 
 ## 运行
 
