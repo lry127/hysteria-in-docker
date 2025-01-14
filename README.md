@@ -4,6 +4,8 @@
 
 ## 构建docker
 
+请确保以以下命令存在PATH中：`docker sed openssl wget pwgen`
+
 ```
 ./build.sh
 ```
