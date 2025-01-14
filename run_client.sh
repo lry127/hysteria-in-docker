@@ -11,4 +11,3 @@ fi
 ./udp2raw -c -l0.0.0.0:8888  -r$SERVER_IP:$SERVER_PORT  -k "passwd" --raw-mode faketcp -a --fix-gro &
 cat extra.yaml >> config.yaml
 ./hysteria
-sleep 1000
