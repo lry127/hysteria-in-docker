@@ -27,3 +27,7 @@ docker build . -f server.Dockerfile -t $server_image_output
 
 echo "Building client image: $client_image_output"
 docker build . -f client.Dockerfile -t $client_image_output
+
+docker image save -o build-tmp/server.img $server_image_output
+docker image save -o build-tmp/client.img $client_image_output
+
